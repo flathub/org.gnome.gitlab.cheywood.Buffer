@@ -44,8 +44,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/cheywood/buffer.git",
-                    "tag": "0.9.4",
-                    "commit": "66a77709b3fb4498f0b92e2c218a52c4d1a5f72f"
+                    "tag": "0.9.5",
+                    "commit": "ecb021e348ddd0b32407432d3bebe08956cf0630"
                 }
             ]
         }
