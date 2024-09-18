@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.gitlab.cheywood.Buffer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "command": "buffer",
     "finish-args": [
@@ -44,8 +44,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/cheywood/buffer.git",
-                    "tag": "0.9.5",
-                    "commit": "ecb021e348ddd0b32407432d3bebe08956cf0630"
+                    "tag": "0.9.6",
+                    "commit": "9005239e55a590e6c8302cefed1270af7d4fd92a"
                 }
             ]
         }
