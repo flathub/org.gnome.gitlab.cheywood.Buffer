@@ -1,0 +1,15 @@
+diff --git a/lib/enchant/spelling-enchant-dictionary.c b/lib/enchant/spelling-enchant-dictionary.c
+index e77ce13..4ed2772 100644
+--- a/lib/enchant/spelling-enchant-dictionary.c
++++ b/lib/enchant/spelling-enchant-dictionary.c
+@@ -253,6 +253,10 @@ spelling_enchant_dictionary_constructed (GObject *object)
+         self->extra_word_chars = g_strdup (extra_word_chars);
+       else
+         self->extra_word_chars = g_strndup (extra_word_chars, end_pos - extra_word_chars);
++
++      /* Hack workaround for https://gitlab.gnome.org/GNOME/gnome-build-meta/-/issues/387 */
++      if (g_str_has_prefix(code, "en_") && g_strrstr(self->extra_word_chars, "'") == NULL)
++        self->extra_word_chars = g_strconcat(self->extra_word_chars, "'", NULL);
+     }
+ }
+ 
