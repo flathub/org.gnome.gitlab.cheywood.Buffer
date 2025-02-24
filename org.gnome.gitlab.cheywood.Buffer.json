@@ -31,8 +31,12 @@
             {
                 "type": "git",
                 "url": "https://gitlab.gnome.org/chergert/libspelling.git",
-                "commit": "0e9b8b2187ecda4dc1ce48a9bcc9a9976490fda2",
-                "tag": "0.2.1"
+                "commit": "47f1d5e7a09b5affef343cb4a45c3040b4238e08",
+                "tag": "0.4.6"
+            },
+            {
+                "type": "patch",
+                "path" : "libspelling-english-extra-word-chars-contractions.diff"
             }
           ]
         },
@@ -44,8 +48,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/cheywood/buffer.git",
-                    "tag": "0.9.8",
-                    "commit": "bf69f8fd739203916e84942f8db538a9c30a4c7c"
+                    "tag": "0.9.9",
+                    "commit": "2113fd219eefb79e424ccf40448b234f0bbea8ec"
                 }
             ]
         }
