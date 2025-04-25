@@ -1,28 +1,33 @@
 {
-    "app-id": "org.gnome.gitlab.cheywood.Buffer",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
-    "sdk": "org.gnome.Sdk",
-    "command": "buffer",
-    "finish-args": [
-        "--device=dri",
+    "id" : "org.gnome.gitlab.cheywood.Buffer",
+    "runtime" : "org.gnome.Platform",
+    "runtime-version" : "48",
+    "sdk" : "org.gnome.Sdk",
+    "sdk-extensions" : [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
+    "command" : "buffer",
+    "finish-args" : [
         "--share=ipc",
         "--socket=fallback-x11",
+        "--device=dri",
         "--socket=wayland"
     ],
+    "build-options" : {
+        "append-path" : "/usr/lib/sdk/rust-stable/bin"
+    },
     "cleanup" : [
-        "*.a",
-        "*.la",
         "/include",
-        "/lib/cmake",
         "/lib/pkgconfig",
         "/man",
-        "/share/aclocal",
+        "/share/doc",
         "/share/gtk-doc",
         "/share/man",
-        "/share/pkgconfig"
+        "/share/pkgconfig",
+        "*.la",
+        "*.a"
     ],
-    "modules": [
+    "modules" : [
         {
           "name": "libspelling",
           "buildsystem": "meson",
@@ -31,8 +36,8 @@
             {
                 "type": "git",
                 "url": "https://gitlab.gnome.org/chergert/libspelling.git",
-                "commit": "47f1d5e7a09b5affef343cb4a45c3040b4238e08",
-                "tag": "0.4.6"
+                "commit": "c7c74e8d402ba2e4cf48d1c57414c1c489a2361b",
+                "tag": "0.4.7"
             },
             {
                 "type": "patch",
@@ -48,8 +53,16 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/cheywood/buffer.git",
-                    "tag": "0.9.10",
-                    "commit": "42c87af15cb9fdcb06eac68c4bef74e0f395a013"
+                    "commit": "16cc59ce47e0861dec431a72f7d5d096550dba9c",
+                    "tag": "0.10.0"
+                },
+                "generated-sources.json",
+                {
+                    "type": "shell",
+                    "commands": [
+                        "mkdir .cargo",
+                        "cp cargo/config .cargo/"
+                    ]
                 }
             ]
         }
