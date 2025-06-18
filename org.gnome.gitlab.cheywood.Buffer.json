@@ -53,8 +53,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/cheywood/buffer.git",
-                    "commit": "16cc59ce47e0861dec431a72f7d5d096550dba9c",
-                    "tag": "0.10.0"
+                    "commit": "6710ac1a4db36810d2831d1df6a7f83074cfe687",
+                    "tag": "0.10.1"
                 },
                 "generated-sources.json",
                 {
