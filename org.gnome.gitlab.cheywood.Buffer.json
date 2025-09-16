@@ -1,7 +1,7 @@
 {
     "id" : "org.gnome.gitlab.cheywood.Buffer",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
+    "runtime-version" : "49",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -36,8 +36,8 @@
             {
                 "type": "git",
                 "url": "https://gitlab.gnome.org/chergert/libspelling.git",
-                "commit": "c7c74e8d402ba2e4cf48d1c57414c1c489a2361b",
-                "tag": "0.4.7"
+                "commit": "e41e11d6ca6f5af987a46caa08036d5f0f629892",
+                "tag": "0.4.9"
             },
             {
                 "type": "patch",
@@ -53,8 +53,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/cheywood/buffer.git",
-                    "commit": "6710ac1a4db36810d2831d1df6a7f83074cfe687",
-                    "tag": "0.10.1"
+                    "commit": "9a2907f1bf9342ad927f333d3601d2a54d5af07b",
+                    "tag": "0.10.2"
                 },
                 "generated-sources.json",
                 {
