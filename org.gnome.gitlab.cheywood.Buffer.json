@@ -36,8 +36,8 @@
             {
                 "type": "git",
                 "url": "https://gitlab.gnome.org/chergert/libspelling.git",
-                "commit": "e41e11d6ca6f5af987a46caa08036d5f0f629892",
-                "tag": "0.4.9"
+                "commit": "1facdde8e1c0fd72bed806f9a9be2fbec83af5f2",
+                "tag": "0.4.10"
             },
             {
                 "type": "patch",
@@ -53,8 +53,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/cheywood/buffer.git",
-                    "commit": "9a2907f1bf9342ad927f333d3601d2a54d5af07b",
-                    "tag": "0.10.2"
+                    "commit": "e9a82e32837974b74251d83324183bdceb5dd9ed",
+                    "tag": "2026.1"
                 },
                 "generated-sources.json",
                 {
